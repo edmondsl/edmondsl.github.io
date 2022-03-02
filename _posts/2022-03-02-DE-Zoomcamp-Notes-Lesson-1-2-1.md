@@ -38,5 +38,28 @@ root@9a961c4381ab:/# rm -rf / --no-preserve-root
 
 If you type `ls` and hit enter, you will receive a message that says "No such file or directory". But if we exit the container and re-run the code we get back to the state we were before. 
 
+![Output](https://user-images.githubusercontent.com/54118138/156463116-0f43be26-9003-4410-95a2-fb4c2a8abe9b.png)
+
+- We can also run python by typing
+
+```console
+stacy@ ~
+$ docker run -it python:3.9
+```
+
+Again, we are asking docker to run an interactive image (python version 3.9). If you haven't run this image before, then the image may take time to download. Once it runs, we can run python code.
+
+**How to use Docker in your data pipeline?**
+
+- In your directory of choice, go to VS code.
+
+```console
+stacy@ ~
+$ code .
+````
+
+- Create a Dockerfile. This will allow us to tell Docker how to create the image we want.
+
+- Create a python script (eg, pipeline.py)
 
 
