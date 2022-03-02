@@ -25,4 +25,18 @@ $ docker run hello-world
 stacy@ ~
 $ docker run -it ubuntu bash
 ```
-Here `ubuntu` is the image. `-it` stands for interactive terminal or interactive mode. This allows us to type a command and interact with docker.
+Here `ubuntu` is the image. `-it` stands for interactive terminal or interactive mode. This allows us to type a command and interact with docker. `bash` lets docker know we want to excecute bash on the image `ubuntu`. For example, we can use the bash command `ls`. 
+
+![Output](https://user-images.githubusercontent.com/54118138/156460822-3cc9d7c1-aafa-4c14-9466-cab629e9a2de.png)
+
+- To highlight the usefulness of docker containers, we can (do something stupid and) delete everthing from our image.
+
+```console
+stacy@ ~
+root@9a961c4381ab:/# rm -rf / --no-preserve-root
+```
+
+If you type `ls` and hit enter, you will receive a message that says "No such file or directory". But if we exit the container and re-run the code we get back to the state we were before. 
+
+
+
