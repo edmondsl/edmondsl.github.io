@@ -11,9 +11,18 @@
 - Serverless
 
 **Some Useful tidbits**
-- To test that Docker is working, type the following in MINGW64 (Git Bash). 
+- To test that Docker is working, we tell docker to run the image `hello-world`. To do this, type the following in MINGW64 (Git Bash). 
 
 ```console
 stacy@ ~ 
 $ docker run hello-world
 ```
+![Output](https://user-images.githubusercontent.com/54118138/156458872-8eefb197-b092-4aba-b5c7-a808e7f7707d.png)
+
+- Docker suggests we try something more ambitious and run an Ubuntu container with 
+
+```console
+stacy@ ~
+$ docker run -it ubuntu bash
+```
+Here `ubuntu` is the image. `-it` stands for interactive terminal or interactive mode. This allows us to type a command and interact with docker.
