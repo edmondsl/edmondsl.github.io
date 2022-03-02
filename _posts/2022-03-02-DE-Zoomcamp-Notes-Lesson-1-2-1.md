@@ -60,6 +60,16 @@ $ code .
 
 - Create a Dockerfile. This will allow us to tell Docker how to create the image we want.
 
+![image](https://user-images.githubusercontent.com/54118138/156467847-4191cf22-0f5e-464c-b854-3a73c924fda3.png)
+
+Here
+
+  - The `FROM` statement tells docker was image to build on.
+  - `RUN` tells docker to run the following code on the image.
+  - `WORKDIR` tells docker where to put the working directory within the container.
+  - `COPY` tells docker to copy our `pipeline.py` python script (file1) to a file in the container's working directory (specified above) called pipeline.py (file2).
+  - `ENTRYPOINT` tells docker to run the pipeline.py script in python.
+
 - Create a python script (eg, pipeline.py)
 
 
