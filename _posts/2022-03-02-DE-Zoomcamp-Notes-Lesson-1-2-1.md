@@ -11,5 +11,9 @@
 - Serverless
 
 **Some Useful tidbits**
-- To test that Docker is working, type `docker run hello-world` in MINGW64 (Git Bash). You will get the following output:
+- To test that Docker is working, type the following in MINGW64 (Git Bash). 
 
+```console
+stacy@ ~ 
+$ docker run hello-world
+```
