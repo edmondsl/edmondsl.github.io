@@ -49,7 +49,7 @@ $ docker run -it python:3.9
 
 Again, we are asking docker to run an interactive image (python version 3.9). If you haven't run this image before, then the image may take time to download. Once it runs, we can run python code.
 
-**How to use Docker in your data pipeline?**
+**How to use Docker to create a data pipeline**
 
 - In your directory of choice, go to VS code.
 
