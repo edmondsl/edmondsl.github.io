@@ -67,6 +67,20 @@ $ code .
 
 ![image](https://user-images.githubusercontent.com/54118138/156614473-c2745799-fbb8-4e07-a81b-55bf9aad27cf.png)
 
-- Create a python script (eg, pipeline.py)
+- Create a python script (eg, pipeline.py). This script will be run in the docker container.
+    - `import sys` is importing the sys module.
+    - `import pandas as pd` is importing the pandas module and giving it the alias of 'pd'.
+    - `print(sys.argv)` will list the number of arguments.
+    - `day = sys.argv[1]` sets the `day` variable as the second argument.
+    - `print(f'job finihsed successfully for day = {day}')` will print the statement "job finished successfully for day (whatever we list as the second argument)".
+
+![image](https://user-images.githubusercontent.com/54118138/156616461-8b47ca73-9319-4e3f-b2b3-9a9148ea3ed4.png)
+
+- Now in our terminal we will use docker to build an image (test:pandas) in our current director( .).
+
+```console
+stacy@ ~
+$ docker build -t test:pandas .
+```
 
 
