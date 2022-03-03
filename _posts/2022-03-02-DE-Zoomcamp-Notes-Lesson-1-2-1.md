@@ -76,7 +76,7 @@ $ code .
 
 ![image](https://user-images.githubusercontent.com/54118138/156616461-8b47ca73-9319-4e3f-b2b3-9a9148ea3ed4.png)
 
-- Now in our terminal we will use docker to build an image (test:pandas) in our current director( .).
+- Now in our terminal we will use docker to build an image (test:pandas) in our current director and looks for a docker file in this directory to run( .).
 
 ```console
 stacy@ ~
@@ -85,6 +85,9 @@ $ docker build -t test:pandas .
 
 ![image](https://user-images.githubusercontent.com/54118138/156623340-5196fcf6-1083-4446-a769-524069954933.png)
 
+- We can pass arguments to a python script while running it in a terminal. So in the terminal (-it) we can run the image we built (test:pandas, argument 1) and specify a second argument (2022-03-02 - a date).
 
 
+
+Notice that the first line of output is from the `print(sys.argv)` statement in the pipeline.py script, and the second line of output is from the `print(f'job finished successfully for day = {day}') statement in the pipeline.py script.
 
