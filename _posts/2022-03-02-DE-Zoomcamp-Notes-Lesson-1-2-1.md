@@ -83,4 +83,8 @@ stacy@ ~
 $ docker build -t test:pandas .
 ```
 
+![image](https://user-images.githubusercontent.com/54118138/156623340-5196fcf6-1083-4446-a769-524069954933.png)
+
+
+
 
