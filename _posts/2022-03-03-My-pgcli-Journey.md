@@ -23,6 +23,12 @@ docker run it \
 
 That was a relatively easy solution to find. The next issue I ran into was with installing pgcli. (Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting. - [source](https://www.pgcli.com/)). When I tried to install pgcli with `pip install pgcli` I received the error:
 
-![image](https://user-images.githubusercontent.com/54118138/156664488-3cf24fcb-4402-4db4-bf3b-75240f18bafa.png)
+![image](https://user-images.githubusercontent.com/54118138/156664774-c2e3a6f8-a920-4e7f-a32a-a5f055cf3b5d.png)
+
+Here is what I did:
+  - Download Microsoft Visual Studio (different than Visual Studio Code). Go [here](https://visualstudio.microsoft.com/) to do so. If you already have it you can go [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
+  - Go to Visual Studio Installer. Click modify. You may need to change workloads or select additional boxes in the option section on the far right under Desktop development with C ++. I used this [sight](https://docs.microsoft.com/en-us/answers/questions/136595/error-microsoft-visual-c-140-or-greater-is-require.html) as a referene of what I needed to do. 
+  
+
 
 
