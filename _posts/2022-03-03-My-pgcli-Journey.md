@@ -1,3 +1,7 @@
+### My pgcli Journey
+
+**Finding solutions took more time than the post might suggest**
+
 Today, my plan was to tackle the second video for week 1 in the DE Zoompcast series. I first ran into issues when running the docker code to create a container with postgre as the image. I ran:
 
 ```console
@@ -26,8 +30,11 @@ That was a relatively easy solution to find. The next issue I ran into was with 
 ![image](https://user-images.githubusercontent.com/54118138/156664774-c2e3a6f8-a920-4e7f-a32a-a5f055cf3b5d.png)
 
 Here is what I did:
-  - Download Microsoft Visual Studio (different than Visual Studio Code). Go [here](https://visualstudio.microsoft.com/) to do so. If you already have it you can go [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/).
-  - Go to Visual Studio Installer. Click modify. You may need to change workloads or select additional boxes in the option section on the far right under Desktop development with C ++. I used this [sight](https://docs.microsoft.com/en-us/answers/questions/136595/error-microsoft-visual-c-140-or-greater-is-require.html) as a referene of what I needed to do. 
+  - Download Microsoft Visual Studio (different than Visual Studio Code). Go [here](https://visualstudio.microsoft.com/) to do so. If you already have it you can go [here](https://visualstudio.microsoft.com/visual-cpp-build-tools/). Note: You want to download 'build tools' and not redistributions. 
+  - Go to Visual Studio Installer. Click modify. You may need to change workloads or select additional boxes in the option section on the far right under Desktop development with C ++. I used this [sight](https://docs.microsoft.com/en-us/answers/questions/136595/error-microsoft-visual-c-140-or-greater-is-require.html) as a referene of what I needed to do. Here is a screenshot from my computer.
+
+![image](https://user-images.githubusercontent.com/54118138/156666574-7a6cca70-b566-4cb5-9ba2-ea40643bb2fb.png)
+
   
 
 
