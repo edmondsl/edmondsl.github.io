@@ -11,7 +11,7 @@
 - Serverless
 
 **Some Useful tidbits**
-- To test that Docker is working, we tell docker to run the image `hello-world`. To do this, type the following in MINGW64 (Git Bash). 
+- To test that Docker is working, we can tell docker to run the image `hello-world`. To do this, type the following in MINGW64 (Git Bash). 
 
 ```console
 stacy@ ~ 
@@ -59,16 +59,13 @@ $ code .
 ````
 
 - Create a Dockerfile. This will allow us to tell Docker how to create the image we want.
+    - `FROM` tells docker what image to build on (the base image).
+    - `RUN` tells docker to run the following code on the image.
+    - `WORKDIR` tells docker where to put the working directory within the container.
+    - `COPY` tells docker to copy our `pipeline.py` python script (located in our current working directory - in this case on my harddrive) to a file in the container's working directory (in the /app directory specified above) called pipeline.py. Note that each file has the same name. This isn't required.
+    - `ENTRYPOINT` tells docker to run the pipeline.py script in python.
 
-![image](https://user-images.githubusercontent.com/54118138/156467847-4191cf22-0f5e-464c-b854-3a73c924fda3.png)
-
-Here
-
-  - The `FROM` statement tells docker was image to build on.
-  - `RUN` tells docker to run the following code on the image.
-  - `WORKDIR` tells docker where to put the working directory within the container.
-  - `COPY` tells docker to copy our `pipeline.py` python script (file1) to a file in the container's working directory (specified above) called pipeline.py (file2).
-  - `ENTRYPOINT` tells docker to run the pipeline.py script in python.
+![image](https://user-images.githubusercontent.com/54118138/156614473-c2745799-fbb8-4e07-a81b-55bf9aad27cf.png)
 
 - Create a python script (eg, pipeline.py)
 
