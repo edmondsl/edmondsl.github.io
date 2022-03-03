@@ -62,7 +62,7 @@ $ code .
     - `FROM` tells docker what image to build on (the base image).
     - `RUN` tells docker to run the following code on the image.
     - `WORKDIR` tells docker where to put the working directory within the container.
-    - `COPY` tells docker to copy our `pipeline.py` python script (located in our current working directory - in this case on my harddrive) to a file in the container's working directory (in the /app directory specified above) called pipeline.py. Note that each file has the same name. This isn't required.
+    - `COPY` tells docker to copy our `pipeline.py` python script (located on our host machine's working directory) to a file in the container's working directory (in the /app directory specified above) called pipeline.py. Note that each file has the same name. This isn't required.
     - `ENTRYPOINT` tells docker to run the pipeline.py script in python.
 
 ![image](https://user-images.githubusercontent.com/54118138/156614473-c2745799-fbb8-4e07-a81b-55bf9aad27cf.png)
