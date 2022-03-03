@@ -9,7 +9,7 @@ docker run it \
   -p 5432:5432 \
   postgres:13
 ```
-And received an error of `Error response from daemon: invalid mode: \Program Files\Git\var\lib\postgresql\data.`. Fellow learners pointed out that window folders need to use a  quisi-linux path in the WSL (windows subsystem for linux). 
+And received an error of `Error response from daemon: invalid mode: \Program Files\Git\var\lib\postgresql\data.`. Fellow learners pointed out that window folders need to use a  quisi-linux path in the WSL (windows subsystem for linux). Notice the `//` in my host machines file path.
   
 ```console
 docker run it \
@@ -22,4 +22,7 @@ docker run it \
 ```
 
 That was a relatively easy solution to find. The next issue I ran into was with installing pgcli. (Pgcli is a command line interface for Postgres with auto-completion and syntax highlighting. - [source](https://www.pgcli.com/)). When I tried to install pgcli with `pip install pgcli` I received the error:
+
+![image](https://user-images.githubusercontent.com/54118138/156664488-3cf24fcb-4402-4db4-bf3b-75240f18bafa.png)
+
 
