@@ -35,6 +35,16 @@ Here is what I did:
 
 ![image](https://user-images.githubusercontent.com/54118138/156666574-7a6cca70-b566-4cb5-9ba2-ea40643bb2fb.png)
 
+### Update (next day):
+
+This morning I used docker to create a container with postgres. I typed
+
+```console
+stacy@ ~
+$pgcli -h localhost -u root -p 5432 -d ny_taxi
+```
+I received a prompt to enter my password (yes!). I entered my password and nothing happened. 
+
   
 
 
