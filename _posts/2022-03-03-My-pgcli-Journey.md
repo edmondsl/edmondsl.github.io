@@ -45,7 +45,9 @@ $pgcli -h localhost -u root -p 5432 -d ny_taxi
 ```
 I received a prompt to enter my password (yes!). I entered my password and nothing happened. 
 
-  
+![image](https://user-images.githubusercontent.com/54118138/156851397-977da0f9-40e0-43fa-963b-2379efedaa59.png)
+
+
 
 
 
