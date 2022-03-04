@@ -47,6 +47,11 @@ I received a prompt to enter my password (yes!). I entered my password and nothi
 
 ![image](https://user-images.githubusercontent.com/54118138/156851397-977da0f9-40e0-43fa-963b-2379efedaa59.png)
 
+When I  tried to close the window I received this message.
+
+![image](https://user-images.githubusercontent.com/54118138/156851479-f4ee0032-315e-4d9d-8232-74540726ea4b.png)
+
+This tells me that something is happening. The question is what?
 
 
 
