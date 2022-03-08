@@ -187,7 +187,7 @@ print(pd.io.sql.get_schema(df, name ='yellow_taxi_data'))
 
 
 ```python
-df.to_sql(name='yellow_taxitrip', con=engine) #sending the subsetted data to postgres
+df.to_sql(name='yellow_taxi_data', con=engine) #sending the subsetted data to postgres
 ```
 
 
