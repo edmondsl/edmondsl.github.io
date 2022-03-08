@@ -3,6 +3,7 @@
 
 1. Run docker code to create a container with prostgres image.
 
+![image](https://user-images.githubusercontent.com/54118138/157337524-6d787014-fa2e-4157-904c-0bc1133cc491.png)
 
   - -e: sets environment parameters.
   - -v: maps a folder of our host machine to a folder in the container.
@@ -109,4 +110,4 @@ while True:
 
 ```consule
 SELECT count(1) FROM yellow_taxi_full_dataset;
-
+```
