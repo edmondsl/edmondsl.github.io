@@ -37,7 +37,7 @@ Here is what I did:
 
 ### Update (next day):
 
-This morning I used docker to create a container with postgres. I typed
+This morning I used docker to create a container with postgres. I then typed the following in GitBash
 
 ```console
 stacy@ ~
@@ -52,6 +52,10 @@ When I  tried to close the window I received this message.
 ![image](https://user-images.githubusercontent.com/54118138/156851479-f4ee0032-315e-4d9d-8232-74540726ea4b.png)
 
 This tells me that something is happening. The question is what?
+
+### Update (next day):
+
+Others (in the DataTalks #course-data-engineering channel) had the same issue as me and suggested I run the `pgcli -h localhost -u root -p 5432 -d ny_taxi' code in a windows terminal or the terminal in VS code. Both of these worked!
 
 
 
