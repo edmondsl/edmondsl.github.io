@@ -57,6 +57,152 @@ This tells me that something is happening. The question is what?
 
 Others (in the DataTalks #course-data-engineering channel) had the same issue as me and suggested I run the `pgcli -h localhost -u root -p 5432 -d ny_taxi' code in a windows terminal or the terminal in VS code. Both of these worked!
 
+I also, tried out the alternative method suggested by Alexey Grigorev in [this video](https://www.youtube.com/watch?v=3IkfkTwqHx4&list=PL3MmuxUbc_hJed7dXYoJw8DoCuVHhGEQb). The alternative route suggests using the sqlalchemy module (via juptyer notebook with anaconda). I need to install the psycopg2 module. I did this by typing `conda install psycopg2` in an anaconda prompt. 
+
+Here is my code following along with the video:
+
+```python
+import pandas as pd #importing pandas module
+```
+
+
+```python
+import sqlalchemy #importing sqlachemy module
+```
+
+
+```python
+from sqlalchemy import create_engine #importing create_engine from the sqlalchemy module
+```
+
+
+```python
+engine = create_engine('postgresql://root:root@localhost:5432/ny_taxi') #creating the 'engine' that connects to postgres. "The above engine creates a Dialect object tailored towards PostgreSQL, as well as a Pool object which will establish a DBAPI connection at localhost:5432 when a connection request is first received."
+```
+
+
+```python
+engine.connect() #checks that the connection is there and the database is up and running
+```
+
+
+
+
+    <sqlalchemy.engine.base.Connection at 0x23894a45940>
+
+
+
+
+```python
+# Example of how to send a query to postgres and produces the results
+query = """
+SELECT 1 as number;
+"""
+
+pd.read_sql(query, con=engine)
+```
+
+
+
+
+
+```python
+# Didn't output anything because there is no table...
+query = """
+SELECT *
+FROM pg_catalog.pg_tables
+WHERE schemaname != 'pg_catalog' AND
+    schemaname != 'information_schema';
+"""
+
+pd.read_sql(query, con=engine)
+```
+
+```python
+df = pd.read_csv('yellow_tripdata_2021-01.csv', nrows = 100) #reading in the first 100 rows of the dataset
+```
+
+```python
+df #viewing the dataset
+```
+
+```python
+print(pd.io.sql.get_schema(df, name ='yellow_taxi_data')) #notice pickup and dropoff times are TEXT
+```
+
+    CREATE TABLE "yellow_taxi_data" (
+    "VendorID" INTEGER,
+      "tpep_pickup_datetime" TEXT,
+      "tpep_dropoff_datetime" TEXT,
+      "passenger_count" INTEGER,
+      "trip_distance" REAL,
+      "RatecodeID" INTEGER,
+      "store_and_fwd_flag" TEXT,
+      "PULocationID" INTEGER,
+      "DOLocationID" INTEGER,
+      "payment_type" INTEGER,
+      "fare_amount" REAL,
+      "extra" REAL,
+      "mta_tax" REAL,
+      "tip_amount" REAL,
+      "tolls_amount" REAL,
+      "improvement_surcharge" REAL,
+      "total_amount" REAL,
+      "congestion_surcharge" REAL
+    )
+    
+
+
+```python
+df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime) #changing pickup and drop off time as timestamp
+df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+```
+
+
+```python
+print(pd.io.sql.get_schema(df, name ='yellow_taxi_data'))
+```
+
+    CREATE TABLE "yellow_taxi_data" (
+    "VendorID" INTEGER,
+      "tpep_pickup_datetime" TIMESTAMP,
+      "tpep_dropoff_datetime" TIMESTAMP,
+      "passenger_count" INTEGER,
+      "trip_distance" REAL,
+      "RatecodeID" INTEGER,
+      "store_and_fwd_flag" TEXT,
+      "PULocationID" INTEGER,
+      "DOLocationID" INTEGER,
+      "payment_type" INTEGER,
+      "fare_amount" REAL,
+      "extra" REAL,
+      "mta_tax" REAL,
+      "tip_amount" REAL,
+      "tolls_amount" REAL,
+      "improvement_surcharge" REAL,
+      "total_amount" REAL,
+      "congestion_surcharge" REAL
+    )
+    
+
+
+```python
+df.to_sql(name='yellow_taxitrip', con=engine) #sending the subsetted data to postgres
+```
+
+
+```python
+# Creating another query, results in a pandas data frame.
+query = """
+SELECT *
+FROM yellow_taxitrip
+LIMIT 10;
+
+"""
+
+pd.read_sql(query, con=engine)
+```
+
 
 
 
