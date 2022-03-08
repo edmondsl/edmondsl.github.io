@@ -104,10 +104,4 @@ while True:
 
 4. Checking to see if data is in the databse.
 
-```consule
-\dt
-```
-
-```consule
-SELECT count(1) FROM yellow_taxi_full_dataset;
-```
+![image](https://user-images.githubusercontent.com/54118138/157337630-37dc2e53-5323-43c0-82b6-b93f5bfbb98b.png)
