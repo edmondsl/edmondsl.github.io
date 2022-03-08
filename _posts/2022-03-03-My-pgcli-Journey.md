@@ -2,7 +2,7 @@
 
 **Finding solutions took more time than the post might suggest**
 
-Today, my plan was to tackle the second video for week 1 in the DE Zoompcast series. I first ran into issues when running the docker code to create a container with postgre as the image. I ran:
+Today, my plan was to tackle the second video for week 1 in the DE Zoompcast series. I first ran into issues when running the docker code to create a container with postgres as the image. I ran:
 
 ```console
 docker run it \
