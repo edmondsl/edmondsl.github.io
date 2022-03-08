@@ -53,7 +53,7 @@ When I  tried to close the window I received this message.
 
 This tells me that something is happening. The question is what?
 
-### Update (next day):
+### Update (a few days later):
 
 Others (in the DataTalks #course-data-engineering channel) had the same issue as me and suggested I run the `pgcli -h localhost -u root -p 5432 -d ny_taxi' code in a windows terminal or the terminal in VS code. Both of these worked!
 
