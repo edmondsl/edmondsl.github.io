@@ -4,12 +4,25 @@
 
 **Why is it useful?** - It is more convenient to use pgAdmin than a terminal to write SQL quesries to interact with a Postgres database.
 
+**Side Note:**
+
+When I tried to run this again the next day I received the error: `docker: Error response from daemon: Conflict. The container name "/pg-database" is already in use by container "ccf547d86f1dab18590b7c40fd0d9bb9fd42e1c9fadd3d4a12c9d3df290a4196". You have to remove (or rename) that container to be able to reuse that name.` 
+  - I can either rename the containers OR
+  - Remove the containers (both the postgres and pgAdmin containers)
+    - Get a list of containers with `docker ps -aq`. 
+    - Find the correct containers (hint look at the error messages or realize that the most recent containers are at the top of the list).
+    - Remove the containers with `docker rm <container ID>`
+  - Re-run the docker code.
+
+**Steps**
+
 1. We don't actually need to install pgAdmin (although we could). Instead we can use docker to pull an image that contains pgAdmin. However, since Postgres and pgAdmin will be in seperate containers we need to create a network allowing the containers to connect. We will create a network with docker.
 
 ```console
 stacy@ ~
 $ docker network create pg-network
 ```
+Note: you only need to do this once. 
 
 We've created a network called `pg-network`.
 
@@ -67,6 +80,10 @@ $docker run -it \
 
 9. You can find and view the dataset (yellow_taxi_full_dataset) we imported. 
 
-To view a subset of the data you can right click on the dataset -> View/Edit data -> First 100 rows.
+![image](https://user-images.githubusercontent.com/54118138/157496181-884a20de-9088-4f15-9284-5d777c780944.png)
+
+To view a subset of the data you can right click on the dataset -> View/Edit data -> First 100 rows. Notice pgAdmin also provides the SQL query.
+
+10. To write your own SQL code, go to Tools -> Query Tool. This will open a Query editor. 
 
  
