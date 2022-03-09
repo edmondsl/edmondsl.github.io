@@ -51,7 +51,11 @@ $docker run -it \
 
 ![image](https://user-images.githubusercontent.com/54118138/157493747-5dd3d519-4696-4591-a820-dea8dd3e12cb.png)
 
-7. 
+7. Name the server.
+
+![image](https://user-images.githubusercontent.com/54118138/157494349-d4cd9b34-30a6-44b9-a683-dadaa31d645b.png)
+
+8. 
 
 
  
