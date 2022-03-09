@@ -55,7 +55,18 @@ $docker run -it \
 
 ![image](https://user-images.githubusercontent.com/54118138/157494349-d4cd9b34-30a6-44b9-a683-dadaa31d645b.png)
 
-8. 
+8. Specify the connection.
+  - Host name/address - the name of the postgres container.
+  - Port - postgres port.
+  - Maintenance database - postgres.
+  - username - postgres username.
+  - password - postgres password.
 
+
+![image](https://user-images.githubusercontent.com/54118138/157494742-00d684e6-5e1a-457d-86fd-12bbea31f001.png)
+
+9. You can find and view the dataset (yellow_taxi_full_dataset) we imported. 
+
+To view a subset of the data you can right click on the dataset -> View/Edit data -> First 100 rows.
 
  
