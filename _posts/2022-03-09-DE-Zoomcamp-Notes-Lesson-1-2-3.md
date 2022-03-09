@@ -28,7 +28,7 @@ $docker run -it \
   postgres:13
  ```
  
- 3. Run docker code for pgAdmin. Just like with the postgres container there are enviroment parameters that need to be specified, the correct port mapping, network, and container name.
+3. Run docker code for pgAdmin. Just like with the postgres container there are enviroment parameters that need to be specified, the correct port mapping, network, and container name.
 
 ```console
 stacy@ ~
@@ -41,7 +41,11 @@ $docker run -it \
   dpage/pgadmin4
   ```
   
-  3. In a web brower, go to localhost:8080.
+4. In a web brower, go to localhost:8080.
+
+![image](https://user-images.githubusercontent.com/54118138/157492224-109d7eaf-29d9-45d9-8900-9ded3aa3fc77.png)
+
+5. Login using the email and password specified in the docker code.
 
 
  
