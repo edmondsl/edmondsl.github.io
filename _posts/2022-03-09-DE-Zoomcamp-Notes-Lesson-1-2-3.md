@@ -47,5 +47,11 @@ $docker run -it \
 
 5. Login using the email and password specified in the docker code.
 
+6. Right click on Server then click Create -> Server...
+
+![image](https://user-images.githubusercontent.com/54118138/157493747-5dd3d519-4696-4591-a820-dea8dd3e12cb.png)
+
+7. 
+
 
  
