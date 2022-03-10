@@ -1,5 +1,5 @@
 
 ---
-layout: page
+location: page
 title: Publications
 ---
