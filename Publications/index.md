@@ -4,7 +4,6 @@ layout: page
 title: Publications
 ---
 
-
 1. Scordino, Jonathan & Akmajian, Adrianne & Edmondson, Stacy. (2021). Dietary niche overlap and prey consumption for the Steller sea lion (*Eumetopias jubatus*) and California sea lion (*Zalophus californianus*) in northwest Washington during 2010–2013. Fishery Bulletin- National Oceanic and Atmospheric Administration. 120. 39-54. 10.7755/FB.120.1.4. 
 
 2. Timothy H Parker, Bridget Sousa, Stephan T Leu, Stacy Edmondson, Cecily Foo, Amy Strauss, Hanna Kahl, Kristen Ballinger, Eric Ross, Mareile Große Ruse, Maria Sandsten, Bram H F Verheijen, William Jensen, Cultural conformity and persistence in Dickcissel song are higher in locations in which males show high site fidelity, Ornithology, Volume 139, Issue 1, 11 January 2022, ukab061, https://doi.org/10.1093/ornithology/ukab061
