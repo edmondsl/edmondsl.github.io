@@ -1,4 +1,4 @@
 ---
-location: page
+layout: page
 title: Teaching
 ---
