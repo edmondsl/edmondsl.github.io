@@ -6,7 +6,10 @@ In this video we learn how to use just one file (YAML) to run both our container
   
 1. Create a YAML file in VS code (in the correct directory).
 
-2. We basically use the same parameters as provided in the individual docker code. Since we are using docker-compose we don't need to create or specifiy a network before-hand.
+2. We basically use the same parameters as provided in the individual docker code. Since we are using docker-compose we don't need to create or specifiy a network beforehand.
+
+![image](https://user-images.githubusercontent.com/54118138/157764493-d335be2a-f9a3-4d68-b28d-b5b6a584f16a.png)
+
 
 3. (optional) check if any containers are running with `docker -ps`.
   
