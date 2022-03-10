@@ -1,5 +1,7 @@
 
-### Ingesting NY Taxi Data to Postgres
+## Notes: DE Zoomcamp 1.2.2
+
+#### Ingesting NY Taxi Data to Postgres
 
 1. Run docker code to create a container with prostgres image.
 
