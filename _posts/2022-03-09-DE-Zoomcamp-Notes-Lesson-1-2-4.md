@@ -1,4 +1,6 @@
-### Dockerizing the ingestion script
+## Notes: DE Zoomcamp 1.2.4
+
+#### Dockerizing the Ingestion Script
 
 Basically in this video we are combining the information from the first three videos into a single process. 
 
@@ -59,7 +61,7 @@ docker run -it \
   - Python script.
 
  ```python
- import pandas as pd #importing pandas module
+import pandas as pd #importing pandas module
 import sqlalchemy #importing sqlachemy module
 import argparse #importing argparse module
 import os #importing the os module
