@@ -1,0 +1,4 @@
+---
+location: page
+title: Teaching
+---
