@@ -1,4 +1,6 @@
-### Connecting pgAdmin and Postgres
+## Notes: DE Zoomcamp 1.2.3
+
+#### Connecting pgAdmin and Postgres
 
 **What is pgAdmin?** - pgAdmin is a web based administration tool for the Postgres database.
 
