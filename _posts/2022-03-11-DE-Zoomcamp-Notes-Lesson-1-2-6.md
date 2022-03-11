@@ -1,4 +1,4 @@
-## DE Zoomcamp 1.2.6
+## Notes: DE-Zoomcamp 1.2.6
 
 #### SQL Refresher
 
