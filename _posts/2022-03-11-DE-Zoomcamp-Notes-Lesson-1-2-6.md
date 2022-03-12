@@ -8,3 +8,7 @@
 df_zones = pd.read_csv('taxi+_zone_lookup.csv') 
 df_zones.to_sql(name='zones', con=engine, if_exists ='replace')
 ```
+
+- Get back to pgAdmin (via docker compose).
+
+-
