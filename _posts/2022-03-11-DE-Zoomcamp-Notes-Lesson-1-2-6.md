@@ -74,3 +74,21 @@ WHERE
 		SELECT "LocationID" FROM zones)
 LIMIT 100;
 ```
+
+4. Count the number of records for each day and order them by the number of records/day from lowest to highest.
+
+```SQL
+SELECT 
+	CAST(tpep_pickup_datetime AS DATE) AS day,
+	COUNT(1) as count
+FROM
+	yellow_taxi_full_dataset AS t 
+GROUP BY day
+ORDER BY count ASC;
+```
+
+**Additional Notes** 
+
+- A useful image to remeber the different `JOIN` statements.
+
+![image](https://user-images.githubusercontent.com/54118138/158254756-d137b4cf-8fd7-49ea-9571-eb85af815523.png)
