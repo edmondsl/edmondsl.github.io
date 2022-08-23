@@ -1,3 +1,5 @@
+# Data Engineering Zoomcamp Notes
+
 ## Notes: DE Zoomcamp 1.2.1
 
 #### Introduction to Docker
