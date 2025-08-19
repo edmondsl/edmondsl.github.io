@@ -1,5 +1,4 @@
-I am a former statistics professor at a small liberal arts college, who voluntarily left to move back 'home'. I am currently exploring a career change from academia to industry. 
+I am an Assistant Professor at Colorado State University in the Statistics Department.  
 
-My posts will focus on my progress learning more about the technical aspects of being a Data Engineer and my favorite hobby, Fantasy Football. I am using DataTalksClub's [Data Engineering Zoomcamp](https://github.com/DataTalksClub/data-engineering-zoomcamp) as my guide for learning more about data engineering and most of my Fantasy Football content is dedicated to my home league. 
 
 
